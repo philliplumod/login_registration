@@ -12,9 +12,26 @@ namespace login_registration
 {
     public partial class WelcomeForm : Form
     {
+     
+
         public WelcomeForm()
         {
             InitializeComponent();
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+   
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to close the form?", "Confirm", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

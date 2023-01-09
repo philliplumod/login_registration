@@ -25,6 +25,7 @@ namespace login_registration
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+          string username = txtUsername.Text;
             connect.Open();
             String login = "SELECT * FROM tbl_users WHERE username ='"+txtUsername.Text+"' AND password = '"+txtPassword.Text+"'";
             command = new OleDbCommand(login, connect);
@@ -32,6 +33,7 @@ namespace login_registration
 
             if(reader.Read() == true)
             {
+      
                 WelcomeForm welcome = new WelcomeForm();
                 welcome.Show();
                 this.Hide();

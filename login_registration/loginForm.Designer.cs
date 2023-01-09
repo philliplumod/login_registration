@@ -35,11 +35,11 @@ namespace login_registration
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.chckPassword = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -97,28 +97,6 @@ namespace login_registration
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(74, 406);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(206, 19);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "You dont have an account yet?";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(11)))), ((int)(((byte)(19)))));
-            this.label4.Location = new System.Drawing.Point(123, 434);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 19);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Register Here";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.Transparent;
@@ -158,6 +136,28 @@ namespace login_registration
             this.chckPassword.Text = "Show Password";
             this.chckPassword.UseVisualStyleBackColor = true;
             this.chckPassword.CheckedChanged += new System.EventHandler(this.chckPassword_CheckedChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(74, 406);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(206, 19);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "You dont have an account yet?";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(11)))), ((int)(((byte)(19)))));
+            this.label4.Location = new System.Drawing.Point(123, 434);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 19);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Register Here";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox1
             // 
@@ -215,7 +215,7 @@ namespace login_registration
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.CheckBox chckPassword;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
